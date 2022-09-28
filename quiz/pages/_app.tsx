@@ -5,9 +5,11 @@ import Dashboard from "../components/Dashboard/Dashboard";
 function MyApp({ Component, pageProps }: AppProps) {
   console.log('App rendered')
 
-  return (<Dashboard>
+  return (
+  <Dashboard>
     <Component {...pageProps} />
-  </Dashboard>)
+  </Dashboard>
+  )
 }
 
 export default MyApp
